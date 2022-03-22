@@ -9,7 +9,7 @@ import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {AppButton} from '../../components';
 
-const Signin = () => {
+const Signin = props => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.imageContainerView}>
@@ -29,7 +29,7 @@ const Signin = () => {
       </View>
       <View style={styles.bottomButtonContainer}>
         <View style={{width: 130}}>
-          <AppButton label="Log in" />
+          <AppButton label="Log in" onPress={()=>props.navigation.navigate("Home")}/>
         </View>
         <View style={{width: 130}}>
           <AppButton label="Sign up" inverted />
