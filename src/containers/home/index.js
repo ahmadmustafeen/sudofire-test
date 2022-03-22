@@ -1,14 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {StyleSheet, Text, TextInput, View} from 'react-native';
+import React from 'react';
+import {Image} from 'react-native';
+import {Icon} from 'react-native-elements';
+import {AppHeader, AppSearch} from '../../components';
 
 const Home = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <AppHeader />
+      <View style={{width: '90%', alignSelf: 'center'}}>
+        <AppSearch />
+      </View>
     </View>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
