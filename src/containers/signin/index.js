@@ -46,7 +46,7 @@ const Signin = () => {
         }}>
         <Text style={{textAlign:'center'}}>Are you a patient?</Text>
         <TouchableOpacity>
-          <Text style={{color: 'black', fontWeight: 'bold',paddingLeft:10}}>Login here</Text>
+          <Text style={{color: 'black', fontWeight: 'bold',paddingLeft:10,textDecorationLine: 'underline'}}>Get here</Text>
         </TouchableOpacity>
       </View>
     </View>
